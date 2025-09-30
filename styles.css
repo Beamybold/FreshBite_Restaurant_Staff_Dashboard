@@ -1,17 +1,27 @@
 body {
   font-family: Arial, sans-serif;
-  background: white;
+  background: #fafdeb;
   margin: 0;
   padding: 20px;
-  color: #0e3f22;
+  color: #434e04;
+  /* display:flex;
+  flex-direction: column; */
 }
+
+.logout-div{
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
 
 .staffDashboard {
   max-width: 800px;
   margin: auto;
-  background: white;
+  background: #eff5d2;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 h1{
@@ -34,16 +44,14 @@ label{
 input, textarea {
   padding: 8px;
   margin-bottom: 10px;
-  min-width: 100px;
   width: 90%; 
-  border: 2px solid #5faf80;
+  border: 1px solid #fafdeb;
   border-radius: 5px;
-
 }
 
 button {
   padding: 8px 12px;
-  background: #469259;
+  background: #c6d870;
   color: white;
   border: none;
   cursor: pointer;
@@ -52,7 +60,7 @@ button {
 }
 
 button:hover {
-  background: #69b689;
+  background: #8fa31e;
 }
 
 table {
@@ -66,6 +74,3 @@ th, td {
   margin-bottom: 30px;
 }
 
-input[type="number"] {
-  width:30%;
-}

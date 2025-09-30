@@ -28,6 +28,10 @@ id: 2,
 
 </head>
 <body>
+    <div class = "logout-div">
+        <button type="submit" class="logout">Log out</button>
+    </div>
+
     <div class="staffDashboard">
         <h1>Staff Dashboard</h1>
 
@@ -38,16 +42,16 @@ id: 2,
             <form id="addmenu">
                 <div class="addMenu">
                     <label for="menu">Name: </label>
-                    <input type="text" id="Menu" name="menu"
+                    <input type="text" id="menu" name="menu"
                 placeholder="Enter menu" required />
 
                  <label for="Price">Price: </label>
                 <input type="number" id="price" name="price"
                 placeholder="Enter price (₦)" required/>
 
-                <label for="descrription">Description: </label>
+                <label for="description">Description: </label>
                 <textarea id="description" name="description" rows="3" placeholder="Describe the menu" required></textarea>
-                <button type="submit">Add Menu</button>
+                <button type="submit" onclick="renderTable()">Add Menu</button>
         </div>
         </form>
         </section>
@@ -66,13 +70,14 @@ id: 2,
                     </tr>
                 </thead>
 
-                <!-- where items will appear -->
-                <tbody></tbody> 
+                <tbody>
+
+                </tbody> 
             </table>
         </div>
         </section>
 
-        <button type="submit" class="logout">Log out</button>
+        
 
 
 
