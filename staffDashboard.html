@@ -1,0 +1,83 @@
+<!-- - Redirect to staff dashboard after login
+ Staff Dashboard  
+- Add new menu items (name, price, description)  
+- Remove existing menu items  
+- View all current menu items  
+- Simple form to edit prices 
+
+Data Storage  
+- Use arrays of objects to store menu items  
+- Use `localStorage` to save data between page visits  
+- No real database needed 
+id: 2,
+        name: "Sandwich",
+        price: 8.00,
+        category: "Food",
+        description: "Turkey and cheese"-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="staffDashboard">
+        <h1>Staff Dashboard</h1>
+
+<!-- Add new menu -->
+        <section>
+            <h3>Add New Menu</h3>
+
+            <form id="addmenu">
+                <div class="addMenu">
+                    <label for="menu">Name: </label>
+                    <input type="text" id="Menu" name="menu"
+                placeholder="Enter menu" required />
+
+                 <label for="Price">Price: </label>
+                <input type="number" id="price" name="price"
+                placeholder="Enter price (₦)" required/>
+
+                <label for="descrription">Description: </label>
+                <textarea id="description" name="description" rows="3" placeholder="Describe the menu" required></textarea>
+                <button type="submit">Add Menu</button>
+        </div>
+        </form>
+        </section>
+<!-- View and edit current menu -->
+        <section>
+        <div class="currentMenu">
+            <h3>Current Menu</h3>
+            <table id = "currentMenu">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price (₦) </th>
+                        <th>Description</th>
+                        <th>Edit Price</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <!-- where items will appear -->
+                <tbody></tbody> 
+            </table>
+        </div>
+        </section>
+
+        <button type="submit" class="logout">Log out</button>
+
+
+
+    </div>
+    
+</body>
+</html>
+
